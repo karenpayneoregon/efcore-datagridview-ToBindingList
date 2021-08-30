@@ -24,6 +24,11 @@ namespace FrontendApplication
             Shown += OnShown;
         }
 
+        /// <summary>
+        /// Initial run will have zero records
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void OnShown(object sender, EventArgs e)
         {
             BindingList<Person> peopleLocalList = await DataOperations.PeopleLocal();

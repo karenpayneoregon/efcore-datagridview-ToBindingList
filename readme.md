@@ -1,5 +1,9 @@
 # WinForms DataGridView with EF Core 5
 
+| Note  |
+| :--- |
+| The inital run of the application will not have any records, use the add button to add data. |
+
 Typically when a developer new to working with database data in a Windows Form application tend to add rows rather than set the DataGridView DataSource property which means more code rather than setting the DataGridView DataSource property using a DataSet or DataTable.
 
 When setting the DataSource property for a DataGridView to a DataTable or DataSet then perform save operations all works as expected. This is not the case when working with Entity Framework Core 5 (EF Core 5).
