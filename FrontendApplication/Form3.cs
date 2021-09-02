@@ -33,6 +33,7 @@ namespace FrontendApplication
 
             AddButton.Enabled = true;
             SaveButton.Enabled = true;
+            DebugViewButton.Enabled = true;
 
         }
 
@@ -53,11 +54,39 @@ namespace FrontendApplication
         private void SaveButton_Click(object sender, EventArgs e)
         {
             var changes = DataOperations.Show();
+            
             if (!string.IsNullOrWhiteSpace(changes))
             {
                 Debug.WriteLine(changes);
             }
+            
             Debug.WriteLine(DataOperations.Context.SaveChanges());
+        }
+
+        /// <summary>
+        ///
+        /// For an understanding see the following doc pages.
+        /// 
+        /// https://docs.microsoft.com/en-us/ef/core/change-tracking/change-detection#when-change-detection-is-needed
+        /// https://docs.microsoft.com/en-us/ef/core/change-tracking/change-detection#methods-that-automatically-detect-changes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DebugViewButton_Click(object sender, EventArgs e)
+        {
+            
+            if (ViewCheckBox.Checked)
+            {
+                var f = new DebugViewForm("Long", DataOperations.Context.ChangeTracker.DebugView.LongView);
+                f.ShowDialog();
+            }
+            else
+            {
+                var f = new DebugViewForm("Short", DataOperations.Context.ChangeTracker.DebugView.ShortView);
+                f.ShowDialog();
+            }
+            
+
         }
     }
 }
