@@ -95,15 +95,17 @@ namespace FrontendApplication
             }
             
         }
-
+        /// <summary>
+        /// If there is a current record/person display first name
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CurrentButton_Click(object sender, EventArgs e)
         {
-            if (_bindingSource.Current is not null)
-            {
-                var person = _peopleLocalList[_bindingSource.Position];
-                MessageBox.Show($@"{person.FirstName}");
-            }
-            
+            if (_bindingSource.Current is null) return;
+            var person = _peopleLocalList[_bindingSource.Position];
+            MessageBox.Show($@"{person.FirstName}");
+
         }
     }
 }
