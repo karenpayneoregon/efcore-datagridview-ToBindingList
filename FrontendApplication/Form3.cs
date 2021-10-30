@@ -15,7 +15,8 @@ namespace FrontendApplication
 {
     public partial class Form3 : Form
     {
-        private readonly BindingSource _bindingSource = new BindingSource();
+        private readonly BindingSource _bindingSource = new ();
+        private BindingList<Person> _peopleLocalList;
         public Form3()
         {
             InitializeComponent();
@@ -31,13 +32,15 @@ namespace FrontendApplication
         /// <param name="e"></param>
         private async void OnShown(object sender, EventArgs e)
         {
-            BindingList<Person> peopleLocalList = await DataOperations.PeopleLocal();
-            _bindingSource.DataSource = peopleLocalList;
+            _peopleLocalList = await DataOperations.PeopleLocal();
+
+            _bindingSource.DataSource = _peopleLocalList;
 
             dataGridView1.DataSource = _bindingSource;
 
             AddButton.Enabled = true;
             SaveButton.Enabled = true;
+            CurrentButton.Enabled = true;
             DebugViewButton.Enabled = true;
 
         }
@@ -91,7 +94,16 @@ namespace FrontendApplication
                 f.ShowDialog();
             }
             
+        }
 
+        private void CurrentButton_Click(object sender, EventArgs e)
+        {
+            if (_bindingSource.Current is not null)
+            {
+                var person = _peopleLocalList[_bindingSource.Position];
+                MessageBox.Show($@"{person.FirstName}");
+            }
+            
         }
     }
 }

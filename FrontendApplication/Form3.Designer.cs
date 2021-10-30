@@ -41,6 +41,7 @@ namespace FrontendApplication
             this.SaveButton = new System.Windows.Forms.Button();
             this.DebugViewButton = new System.Windows.Forms.Button();
             this.ViewCheckBox = new System.Windows.Forms.CheckBox();
+            this.CurrentButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,11 +155,25 @@ namespace FrontendApplication
             this.ViewCheckBox.Text = "Long view";
             this.ViewCheckBox.UseVisualStyleBackColor = true;
             // 
+            // CurrentButton
+            // 
+            this.CurrentButton.Enabled = false;
+            this.CurrentButton.Image = global::FrontendApplication.Properties.Resources.Item;
+            this.CurrentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CurrentButton.Location = new System.Drawing.Point(12, 305);
+            this.CurrentButton.Name = "CurrentButton";
+            this.CurrentButton.Size = new System.Drawing.Size(261, 23);
+            this.CurrentButton.TabIndex = 9;
+            this.CurrentButton.Text = "Currrent";
+            this.CurrentButton.UseVisualStyleBackColor = true;
+            this.CurrentButton.Click += new System.EventHandler(this.CurrentButton_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 306);
+            this.ClientSize = new System.Drawing.Size(285, 353);
+            this.Controls.Add(this.CurrentButton);
             this.Controls.Add(this.ViewCheckBox);
             this.Controls.Add(this.DebugViewButton);
             this.Controls.Add(this.SaveButton);
@@ -191,5 +206,6 @@ namespace FrontendApplication
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button DebugViewButton;
         private System.Windows.Forms.CheckBox ViewCheckBox;
+        private System.Windows.Forms.Button CurrentButton;
     }
 }
