@@ -80,7 +80,11 @@ namespace FrontendApplication
                 Debug.WriteLine(changes);
             }
         }
-
+        /// <summary>
+        /// Example use extension method
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CurrentButton_Click(object sender, EventArgs e)
         {
             InformationDialog($"{_bindingSource.Fullname()}", "Current");
