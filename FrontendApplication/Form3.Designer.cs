@@ -39,6 +39,9 @@ namespace FrontendApplication
             this.LastNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.DebugViewButton = new System.Windows.Forms.Button();
+            this.ViewCheckBox = new System.Windows.Forms.CheckBox();
+            this.CurrentButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +77,7 @@ namespace FrontendApplication
             this.AddButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddButton.Location = new System.Drawing.Point(12, 244);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(75, 23);
+            this.AddButton.Size = new System.Drawing.Size(105, 23);
             this.AddButton.TabIndex = 1;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = true;
@@ -121,19 +124,58 @@ namespace FrontendApplication
             this.SaveButton.Enabled = false;
             this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
             this.SaveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveButton.Location = new System.Drawing.Point(198, 244);
+            this.SaveButton.Location = new System.Drawing.Point(174, 244);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.Size = new System.Drawing.Size(105, 23);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
+            // DebugViewButton
+            // 
+            this.DebugViewButton.Enabled = false;
+            this.DebugViewButton.Image = ((System.Drawing.Image)(resources.GetObject("DebugViewButton.Image")));
+            this.DebugViewButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DebugViewButton.Location = new System.Drawing.Point(12, 273);
+            this.DebugViewButton.Name = "DebugViewButton";
+            this.DebugViewButton.Size = new System.Drawing.Size(105, 23);
+            this.DebugViewButton.TabIndex = 7;
+            this.DebugViewButton.Text = "  Debug view";
+            this.DebugViewButton.UseVisualStyleBackColor = true;
+            this.DebugViewButton.Click += new System.EventHandler(this.DebugViewButton_Click);
+            // 
+            // ViewCheckBox
+            // 
+            this.ViewCheckBox.AutoSize = true;
+            this.ViewCheckBox.Location = new System.Drawing.Point(126, 274);
+            this.ViewCheckBox.Name = "ViewCheckBox";
+            this.ViewCheckBox.Size = new System.Drawing.Size(80, 19);
+            this.ViewCheckBox.TabIndex = 8;
+            this.ViewCheckBox.Text = "Long view";
+            this.ViewCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // CurrentButton
+            // 
+            this.CurrentButton.Enabled = false;
+            this.CurrentButton.Image = global::FrontendApplication.Properties.Resources.Item;
+            this.CurrentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CurrentButton.Location = new System.Drawing.Point(12, 305);
+            this.CurrentButton.Name = "CurrentButton";
+            this.CurrentButton.Size = new System.Drawing.Size(261, 23);
+            this.CurrentButton.TabIndex = 9;
+            this.CurrentButton.Text = "Currrent";
+            this.CurrentButton.UseVisualStyleBackColor = true;
+            this.CurrentButton.Click += new System.EventHandler(this.CurrentButton_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 279);
+            this.ClientSize = new System.Drawing.Size(285, 353);
+            this.Controls.Add(this.CurrentButton);
+            this.Controls.Add(this.ViewCheckBox);
+            this.Controls.Add(this.DebugViewButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LastNameTextBox);
@@ -162,5 +204,8 @@ namespace FrontendApplication
         private System.Windows.Forms.TextBox LastNameTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button DebugViewButton;
+        private System.Windows.Forms.CheckBox ViewCheckBox;
+        private System.Windows.Forms.Button CurrentButton;
     }
 }

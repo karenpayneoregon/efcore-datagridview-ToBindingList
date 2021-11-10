@@ -65,6 +65,7 @@ private async void OnShown(object sender, EventArgs e)
 - **Form1** just does not work
 - **Form2** we need to *touch* the DataGridView once loaded to get at loaded data
 - **Form3** Set the DataGridView.DataSource and no need to *touch* the DataGridView once loaded to access data.
+  - Check out :point_right: `ChangeTracker.DebugView.LongView`
 
 # Evaluating local changes
 
@@ -112,6 +113,8 @@ So looking at the `big picture` past working with a DataGridView and EF Core is 
   - [Entity Framework: Disconnected Entities](https://social.technet.microsoft.com/wiki/contents/articles/53180.entity-framework-disconnected-entities.aspx)
   - [Entity Framework Windows Form validation](https://social.technet.microsoft.com/wiki/contents/articles/53201.entity-framework-windows-form-validation.aspx)
   - [Entity Framework Core 3: projections](https://social.technet.microsoft.com/wiki/contents/articles/53881.entity-framework-core-3-projections.aspx) (valid with newer releases)
-
+- Microsoft documentation
+  - [Change Tracking in EF Core](https://docs.microsoft.com/en-us/ef/core/change-tracking/)
+  - [Testing code that uses EF Core](https://docs.microsoft.com/en-us/ef/core/testing/)
 
 
