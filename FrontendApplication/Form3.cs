@@ -10,12 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataLibrary.Models;
 using FrontendApplication.Classes;
+using static FrontendApplication.Classes.Dialogs;
 
 namespace FrontendApplication
 {
     public partial class Form3 : Form
     {
-        private readonly BindingSource _bindingSource = new BindingSource();
+        private readonly BindingSource _bindingSource = new();
         public Form3()
         {
             InitializeComponent();
@@ -52,6 +53,10 @@ namespace FrontendApplication
                 });
                 
                 _bindingSource.MoveLast();
+            }
+            else
+            {
+                ErrorDialog("Requires first and last name!");
             }
         }
 

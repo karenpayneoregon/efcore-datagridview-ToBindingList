@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using DataLibrary.Models;
 using FrontendApplication.Classes;
+using static FrontendApplication.Classes.Dialogs;
 
 namespace FrontendApplication
 {
@@ -37,6 +38,10 @@ namespace FrontendApplication
                     LastName = LastNameTextBox.Text
                 });
             }
+            else
+            {
+                ErrorDialog("Requires first and last name!");
+            }
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
@@ -46,7 +51,8 @@ namespace FrontendApplication
             {
                 Debug.WriteLine(changes);
             }
-            Debug.WriteLine(DataOperations.Context.SaveChanges());
+            
+            InformationDialog($"Count: {DataOperations.Context.SaveChanges()}","Changes");
         }
     }
 }
