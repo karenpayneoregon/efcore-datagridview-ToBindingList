@@ -40,7 +40,6 @@ namespace FrontendApplication
             this.label2 = new System.Windows.Forms.Label();
             this.SaveButton = new System.Windows.Forms.Button();
             this.DebugViewButton = new System.Windows.Forms.Button();
-            this.ViewCheckBox = new System.Windows.Forms.CheckBox();
             this.CurrentButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -145,16 +144,6 @@ namespace FrontendApplication
             this.DebugViewButton.UseVisualStyleBackColor = true;
             this.DebugViewButton.Click += new System.EventHandler(this.DebugViewButton_Click);
             // 
-            // ViewCheckBox
-            // 
-            this.ViewCheckBox.AutoSize = true;
-            this.ViewCheckBox.Location = new System.Drawing.Point(126, 274);
-            this.ViewCheckBox.Name = "ViewCheckBox";
-            this.ViewCheckBox.Size = new System.Drawing.Size(80, 19);
-            this.ViewCheckBox.TabIndex = 8;
-            this.ViewCheckBox.Text = "Long view";
-            this.ViewCheckBox.UseVisualStyleBackColor = true;
-            // 
             // CurrentButton
             // 
             this.CurrentButton.Enabled = false;
@@ -174,7 +163,6 @@ namespace FrontendApplication
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(285, 353);
             this.Controls.Add(this.CurrentButton);
-            this.Controls.Add(this.ViewCheckBox);
             this.Controls.Add(this.DebugViewButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.label2);
@@ -205,7 +193,6 @@ namespace FrontendApplication
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button DebugViewButton;
-        private System.Windows.Forms.CheckBox ViewCheckBox;
         private System.Windows.Forms.Button CurrentButton;
     }
 }
