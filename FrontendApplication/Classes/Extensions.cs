@@ -21,5 +21,8 @@ namespace FrontendApplication.Classes
         {
             ((BindingList<Person>)sender.DataSource).Add(person);
         }
+
+        public static Person Person(this BindingSource sender) => (Person)sender.Current;
+        public static string Fullname(this BindingSource sender) => ((Person)sender.Current).FullName;
     }
 }

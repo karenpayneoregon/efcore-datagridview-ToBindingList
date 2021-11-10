@@ -39,6 +39,8 @@ namespace FrontendApplication
 
             AddButton.Enabled = true;
             SaveButton.Enabled = true;
+            DebugViewButton.Enabled = true;
+            CurrentButton.Enabled = true;
 
         }
 
@@ -68,6 +70,20 @@ namespace FrontendApplication
                 Debug.WriteLine(changes);
             }
             Debug.WriteLine(DataOperations.Context.SaveChanges());
+        }
+
+        private void DebugViewButton_Click(object sender, EventArgs e)
+        {
+            var changes = DataOperations.Show();
+            if (!string.IsNullOrWhiteSpace(changes))
+            {
+                Debug.WriteLine(changes);
+            }
+        }
+
+        private void CurrentButton_Click(object sender, EventArgs e)
+        {
+            InformationDialog($"{_bindingSource.Fullname()}", "Current");
         }
     }
 }

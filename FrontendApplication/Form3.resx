@@ -68,7 +68,7 @@
   <data name="SaveButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAAAd0SU1FB+UIDxc4AgK2EyQAAAAHdEVYdEF1dGhvcgCprsxIAAAADHRFWHREZXNj
+        vAAADrwBlbxySQAAAAd0SU1FB+UIDxc4AgK2EyQAAAAHdEVYdEF1dGhvcgCprsxIAAAADHRFWHREZXNj
         cmlwdGlvbgATCSEjAAAACnRFWHRDb3B5cmlnaHQArA/MOgAAAAl0RVh0U29mdHdhcmUAXXD/OgAAAAd0
         RVh0U291cmNlAPX/g+sAAAAIdEVYdENvbW1lbnQA9syWvwAAAAZ0RVh0VGl0bGUAqO7SJwAAAbFJREFU
         OE99kcsvA1EUxu9fYMsGG8HW0kLEI2yECPGKxIawQCJIvcIfgCCq8VogVFiJsPHYicdKbIuWYNAyNZ3p
@@ -84,7 +84,7 @@
   <data name="DebugViewButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAAFVJREFUOE9j+P//P0WY4du3b/8pwWADnJycyMKDzIAP7z+ShIky4FCtFAaGyWE1
+        vwAADr8BOAVTJAAAAFVJREFUOE9j+P//P0WY4du3b/8pwWADnJycyMKDzIAP7z+ShIky4FCtFAaGyWE1
         AETDMFkGkIJpYwCIhmEQn2IvUGwAPoxhADkYbgAlGGsWJR7/ZwAAmIX8d7eReZ0AAAAASUVORK5CYII=
 </value>
   </data>
