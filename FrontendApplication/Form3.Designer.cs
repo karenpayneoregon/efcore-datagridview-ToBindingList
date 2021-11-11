@@ -41,6 +41,7 @@ namespace FrontendApplication
             this.SaveButton = new System.Windows.Forms.Button();
             this.DebugViewButton = new System.Windows.Forms.Button();
             this.CurrentButton = new System.Windows.Forms.Button();
+            this.LongViewCheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,11 +158,24 @@ namespace FrontendApplication
             this.CurrentButton.UseVisualStyleBackColor = true;
             this.CurrentButton.Click += new System.EventHandler(this.CurrentButton_Click);
             // 
+            // LongViewCheckBox
+            // 
+            this.LongViewCheckBox.AutoSize = true;
+            this.LongViewCheckBox.Checked = true;
+            this.LongViewCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.LongViewCheckBox.Location = new System.Drawing.Point(130, 276);
+            this.LongViewCheckBox.Name = "LongViewCheckBox";
+            this.LongViewCheckBox.Size = new System.Drawing.Size(80, 19);
+            this.LongViewCheckBox.TabIndex = 10;
+            this.LongViewCheckBox.Text = "Long view";
+            this.LongViewCheckBox.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(285, 353);
+            this.Controls.Add(this.LongViewCheckBox);
             this.Controls.Add(this.CurrentButton);
             this.Controls.Add(this.DebugViewButton);
             this.Controls.Add(this.SaveButton);
@@ -194,5 +208,6 @@ namespace FrontendApplication
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button DebugViewButton;
         private System.Windows.Forms.Button CurrentButton;
+        private System.Windows.Forms.CheckBox LongViewCheckBox;
     }
 }

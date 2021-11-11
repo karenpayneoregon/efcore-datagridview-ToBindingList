@@ -46,7 +46,7 @@ namespace FrontendApplication
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            var changes = DataOperations.Show();
+            var changes = DataOperations.ShowShortView();
             if (!string.IsNullOrWhiteSpace(changes))
             {
                 Debug.WriteLine(changes);

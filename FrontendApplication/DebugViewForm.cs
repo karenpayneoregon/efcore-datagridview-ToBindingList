@@ -29,7 +29,7 @@ namespace FrontendApplication
             Shown += OnShown;
         }
 
-        private void OnShown(object? sender, EventArgs e)
+        private void OnShown(object sender, EventArgs e)
         {
             textBox1.Text = string.IsNullOrWhiteSpace(_content) ? "No changes" : _content;
         }

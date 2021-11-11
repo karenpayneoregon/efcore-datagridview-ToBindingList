@@ -64,7 +64,7 @@ namespace FrontendApplication
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            var changes = DataOperations.Show();
+            var changes = DataOperations.ShowShortView();
             if (!string.IsNullOrWhiteSpace(changes))
             {
                 Debug.WriteLine(changes);
@@ -74,11 +74,21 @@ namespace FrontendApplication
 
         private void DebugViewButton_Click(object sender, EventArgs e)
         {
-            var changes = DataOperations.Show();
-            if (!string.IsNullOrWhiteSpace(changes))
+            if (LongViewCheckBox.Checked)
             {
-                Debug.WriteLine(changes);
+                DebugViewForm form = new DebugViewForm("Long view", DataOperations.ShowLongView());
+                form.ShowDialog();
             }
+            else
+            {
+                var changes = DataOperations.ShowShortView();
+                if (!string.IsNullOrWhiteSpace(changes))
+                {
+                    DebugViewForm form = new DebugViewForm("Short view", changes);
+                    form.ShowDialog();
+                }
+            }
+
         }
         /// <summary>
         /// Example use extension method

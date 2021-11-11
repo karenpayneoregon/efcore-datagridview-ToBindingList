@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using DataLibrary.Data;
 using DataLibrary.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace FrontendApplication.Classes
 {
@@ -27,7 +28,7 @@ namespace FrontendApplication.Classes
             });
         }
 
-        public static string Show()
+        public static string ShowShortView()
         {
             StringBuilder builder = new ();
             foreach (var person in Context.Person.Local)
@@ -40,6 +41,8 @@ namespace FrontendApplication.Classes
 
             return builder.ToString();
         }
+
+        public static string ShowLongView() => Context.ChangeTracker.DebugView.LongView;
 
         /// <summary>
         /// Get changes for any property changed as in
