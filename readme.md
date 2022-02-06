@@ -1,5 +1,9 @@
 # WinForms DataGridView with EF Core 5
 
+
+:trident:
+
+
 | Note  |
 | :--- |
 | The inital run of the application will not have any records, use the add button to add data. |
@@ -93,7 +97,7 @@ public static string Show()
 
 What can be learned is not to work directly with a DataGridView for displaying database data using EF Core 5 or higher.
 
-Novice developers tend to want the easiest way to code a solution which is great while when they don’t understand and/or think ahead will a) write a good deal more code then required b) seek help and in many cases unwilling to accept, in this case using a BindingList with a BindingSource.
+Novice developers tend to want the easiest way to code a solution which is great while when they donï¿½t understand and/or think ahead will a) write a good deal more code then required b) seek help and in many cases unwilling to accept, in this case using a BindingList with a BindingSource.
 
 So looking at the `big picture` past working with a DataGridView and EF Core is to think ahead for other coding task. Even better, take time when appropriate after reading documentation write unit test to validate that what you think the code should do actually does.
 
