@@ -7,9 +7,9 @@ The inital run of the application will not have any records, use the add button 
 
 ---
 
-Typically when a developer new to working with database data in a Windows Form application tend to add rows rather than set the DataGridView DataSource property which means more code rather than setting the DataGridView DataSource property using a DataSet or DataTable.
+Typically when a developer new to working with database data in a Windows Form application tend to `add rows` directly to the DataGridView rather than set the DataGridView `DataSource property` which means more code rather than setting the DataGridView DataSource property using a DataSet or DataTable.
 
-When setting the DataSource property for a DataGridView to a DataTable or DataSet then perform save operations all works as expected. This is not the case when working with Entity Framework Core 5 (EF Core 5).
+When setting the `DataSource property` for a [DataGridView](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.datagridview?view=windowsdesktop-6.0) to a [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-6.0) or [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-6.0) then perform save operations all works as expected. This is not the case when working with Entity Framework Core 5 (EF Core 5).
 
 **Basic mistake** where adding a new record (as shown in `Form1`) will not display the new record in the DataGridView.
 
