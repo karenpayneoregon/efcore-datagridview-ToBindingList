@@ -1,7 +1,7 @@
 # WinForms DataGridView with EF Core 5
 
 
-# :trident: Note 
+## :warning: Note 
 
 The inital run of the application will not have any records, use the add button to add data.
 
