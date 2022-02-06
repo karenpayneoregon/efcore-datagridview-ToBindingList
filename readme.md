@@ -1,12 +1,11 @@
 # WinForms DataGridView with EF Core 5
 
 
-:trident:
+# :trident: Note 
 
+The inital run of the application will not have any records, use the add button to add data.
 
-| Note  |
-| :--- |
-| The inital run of the application will not have any records, use the add button to add data. |
+---
 
 Typically when a developer new to working with database data in a Windows Form application tend to add rows rather than set the DataGridView DataSource property which means more code rather than setting the DataGridView DataSource property using a DataSet or DataTable.
 
