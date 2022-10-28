@@ -57,35 +57,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AddButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAEdJREFUOE9jGAW4wbdv3/4jY6gw8QCkyaLLBIxJMgDZVmQDYBiqDDdA1oiO6WcA
-        DCNrhGGoMsIA3QCoMPEA2VayDBgxgIEBAB40k8HUp99yAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="SaveButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAAd0SU1FB+UIDxc4AgK2EyQAAAAHdEVYdEF1dGhvcgCprsxIAAAADHRFWHREZXNj
-        cmlwdGlvbgATCSEjAAAACnRFWHRDb3B5cmlnaHQArA/MOgAAAAl0RVh0U29mdHdhcmUAXXD/OgAAAAd0
-        RVh0U291cmNlAPX/g+sAAAAIdEVYdENvbW1lbnQA9syWvwAAAAZ0RVh0VGl0bGUAqO7SJwAAAbFJREFU
-        OE99kcsvA1EUxu9fYMsGG8HW0kLEI2yECPGKxIawQCJIvcIfgCCq8VogVFiJsPHYicdKbIuWYNAyNZ3p
-        VD36Oeei0mZi8WXuPd/vO3PmjDAMs9OtPAfc936c3z79K2Y8ihrQDLNLXN2rWlLjCkTJDETRFESxw1rs
-        EZPY6IRbUTVxqahUmEYyhevH9lE1vGMp9lKanJK9uKMMjyCKHGTsAYgA7yFrkdcwvk+sHa4bysggjVI9
-        sgN8vkLXApZir3Z0l9ip2CCPw501v2Yp9mpG4oPlc0ioW0Bm+zrSW9csxR4zzP4FK+chymZlN5E/CVEQ
-        J66xxwyxf8EKCpbOIKV5FXmDW8jp34wR11LJY4bZ2GCBHQPLx7S9D9KbfH6Ggng3g/I85DyRTDR4wf+x
-        lEYotKNn8Yi2/gbH9hn6lo7w6FVhBL43yndmokHF5zeyujcgcidgWziU3TPa1iV0eeOFqetUeoVt8fD7
-        W3+XEw6H6/ZOPb60ljV0zB/IYHYPNaLOnltfNNgb/0YiRSQSqb32+nXF+wLDCOLqQZWmTmfTNBEKmXh4
-        0uC69v3Ug/gCmKVAFAKbbsMAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="DebugViewButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAFVJREFUOE9j+P//P0WY4du3b/8pwWADnJycyMKDzIAP7z+ShIky4FCtFAaGyWE1
-        AETDMFkGkIJpYwCIhmEQn2IvUGwAPoxhADkYbgAlGGsWJR7/ZwAAmIX8d7eReZ0AAAAASUVORK5CYII=
-</value>
-  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

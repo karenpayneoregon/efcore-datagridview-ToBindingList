@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using DataLibrary.Data;
 using DataLibrary.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace FrontendApplication.Classes
 {

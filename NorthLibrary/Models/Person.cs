@@ -5,9 +5,10 @@ using System.Runtime.CompilerServices;
 
 namespace DataLibrary.Models
 {
-    public partial class Person : INotifyPropertyChanged
+    public class Person : INotifyPropertyChanged
     {
         private string _firstName;
+        private string _lastName;
         public int Id { get; set; }
 
         public string FirstName
@@ -17,10 +18,21 @@ namespace DataLibrary.Models
             {
                 _firstName = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(FullName));
             }
         }
 
-        public string LastName { get; set; }
+        public string LastName
+        {
+            get => _lastName;
+            set
+            {
+                _lastName = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(FullName));
+            }
+        }
+
         public string FullName => $"{FirstName} {LastName}";
 
         public event PropertyChangedEventHandler PropertyChanged;
